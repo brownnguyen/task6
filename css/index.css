@@ -322,6 +322,8 @@
       width: 70%;
       padding-left: 8.2%; }
       .news .news-content .left .title {
+        font-family: "Oswald", sans-serif;
+        font-weight: 400;
         font-size: 2.4rem;
         margin-bottom: -3px; }
         .news .news-content .left .title:after {
@@ -390,7 +392,7 @@
         margin-top: -3px;
         padding: 7.2%;
         color: white;
-        background-color: #383639; }
+        background-color: #222222; }
         .special .top-content .card .card-text .title,
         .special .bottom-content .card .card-text .title {
           font-size: 2.4rem;

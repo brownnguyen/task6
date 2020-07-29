@@ -379,6 +379,8 @@
             width: 70%;
             padding-left: 8.2%;
             .title {
+                font-family: "Oswald", sans-serif;
+                font-weight: 400;
                 font-size: 2.4rem;
                 margin-bottom: -3px;
                 &:after {
@@ -463,7 +465,7 @@
                 margin-top: -3px;
                 padding: 7.2%;
                 color: white;
-                background-color: $black;
+                background-color: $bg-black;
                 .title {
                     font-size: 2.4rem;
                     text-align: center;

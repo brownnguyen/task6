@@ -1060,6 +1060,13 @@
         .envi-content {
             .card {
                 width: 100%;
+                .img {
+                    .arrow {
+                        width: 30px;
+                        height: 30px;
+                        bottom: -10px;
+                    }
+                }
             }
         }
         .title {

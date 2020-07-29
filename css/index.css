@@ -809,6 +809,10 @@
       padding-left: 0; }
   .envi-employ .envi-content .card {
     width: 100%; }
+    .envi-employ .envi-content .card .img .arrow {
+      width: 30px;
+      height: 30px;
+      bottom: -10px; }
   .envi-employ .title {
     margin-bottom: 20px; }
   .envi-employ .employ-content {

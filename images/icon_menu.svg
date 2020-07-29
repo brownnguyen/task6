@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #efefef;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="長方形_9" data-name="長方形 9" class="cls-1" d="M1262,1104h8v2h-8v-2Zm-4,0h2v2h-2v-2Zm4,5h8v2h-8v-2Zm-4,0h2v2h-2v-2Zm4,5h8v2h-8v-2Zm-4,0h2v2h-2v-2Z" transform="translate(-1258 -1104)"/>
+</svg>

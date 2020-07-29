@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="60" viewBox="0 0 48 60">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #222;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="長方形_11_のコピー" data-name="長方形 11 のコピー" class="cls-1" d="M434,5713v-54h10v-6h28v6h10v54H434Zm34-56H448v8h20v-8Zm10,6h-6v6H444v-6h-6v46h40v-46Zm-6,16H444v-4h28v4Zm0,10H444v-4h28v4Zm0,10H444v-4h28v4Z" transform="translate(-434 -5653)"/>
+</svg>

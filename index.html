@@ -9,19 +9,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/slick-theme.css">
     <link rel="stylesheet" href="./assets/css/slick.css">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <!-- <link rel="stylesheet" href="./assets/css/demo.css"> -->
     <link rel="stylesheet" href="./assets/css/revealer.css">
     <link rel="stylesheet" href="./assets/css/pater.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/index.css">
     <title>Task6</title>
+    <script>document.documentElement.className = 'js';</script>
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-7243260-2']);
+        _gaq.push(['_trackPageview']);
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
 </head>
 
 <body>
     <header class="header">
-        <div class="logo">
-            <h1>
-                <a href="#index.html">LOGO</a>
-            </h1>
+        <div class="header-content">
+            <div class="logo">
+                <h1>
+                    <a href="#index.html">LOGO</a>
+                </h1>
+            </div>
+            <div class="menu-header">
+                <div class="menu-span">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
         </div>
     </header>
     <div class="menu">
@@ -43,6 +66,27 @@
             <span>ENTRY</span>
         </div>
     </a>
+    <section class="drawer">
+        <div class="drawer-content">
+            <div class="btn-cls-drawer">
+                <div class="btn-span">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <ul>
+                <li> <a href="#link">メニュー</a> </li>
+                <li> <a href="#link">∟メニュー</a> </li>
+                <li> <a href="#link">∟メニュー</a> </li>
+                <li> <a href="#link">∟メニュー</a> </li>
+                <li> <a href="#link">∟メニュー</a> </li>
+                <li> <a href="#link">∟メニュー</a> </li>
+            </ul>
+        </div>
+    </section>
+    <div class="layer-drawer">
+
+    </div>
     <section class="main-body">
         <section class="topslider">
             <div class="topslide-main">
@@ -54,7 +98,7 @@
             </div>
             <div class="scroll">
                 <span class="text">SCROLL</span>
-                <span class="line-scroll">
+                <span class="line-scroll scroll-key-frame">
                 </span>
             </div>
         </section>
@@ -279,7 +323,8 @@
                     <div class="content">
                         <a href="#link">
                             <div class="icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="60" viewBox="0 0 48 60">
+                                <svg class="icon-employ" xmlns="http://www.w3.org/2000/svg" width="48" height="60"
+                                    viewBox="0 0 48 60">
                                     <defs>
                                         <style>
                                             .cls-1 {
@@ -303,7 +348,8 @@
                         <a href="#link">
                             <div class="icon">
 
-                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="57" viewBox="0 0 50 57">
+                                <svg class="icon-employ" xmlns="http://www.w3.org/2000/svg" width="50" height="57"
+                                    viewBox="0 0 50 57">
                                     <defs>
                                         <style>
                                             .cls-1 {
@@ -326,7 +372,8 @@
                         <a href="#link">
                             <div class="icon">
 
-                                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="48" viewBox="0 0 29 48">
+                                <svg class="icon-employ" xmlns="http://www.w3.org/2000/svg" width="29" height="48"
+                                    viewBox="0 0 29 48">
                                     <defs>
                                         <style>
                                             .cls-1 {
@@ -386,8 +433,8 @@
     <script src="./assets/js/jquery-2.2.4.min.js"></script>
     <script src="./assets/js/slick.min.js"></script>
     <script src="./assets/js/anime.min.js"></script>
-    <script src="./assets/js/main.js"></script>
     <script src="./assets/js/scrollMonitor.js"></script>
+    <script src="./assets/js/main.js"></script>
     <script src="./js/index.js"></script>
 </body>
 

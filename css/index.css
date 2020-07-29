@@ -3,13 +3,22 @@
   padding: 0;
   margin: 0; }
 
+@keyframes scrollKeyframe {
+  0% {
+    transform: translateY(-20%); }
+  100% {
+    transform: translateY(50%); } }
+
+.scroll-key-frame {
+  animation-name: scrollKeyframe;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; }
+
 .main-body {
   margin: 0 100px;
   margin-top: 120px; }
-
-.header.stick .logo {
-  padding-top: 8px;
-  padding-bottom: 14px; }
 
 .header {
   position: fixed;
@@ -17,23 +26,26 @@
   top: 0;
   transition: all 0.5s ease;
   width: 100%;
+  height: 120px;
   background-color: white;
   z-index: 1030;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center; }
+  top: 0; }
+  .header .header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%; }
   .header .logo {
     transition: all 0.5s ease;
-    padding-top: 12px;
-    padding-bottom: 18px;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    justify-content: center; }
     .header .logo h1 {
       position: relative;
       display: inline-block;
-      font-weight: 400; }
+      font-weight: 400;
+      margin: 0; }
       .header .logo h1 a {
         font-size: 6rem;
         color: #383639;
@@ -46,6 +58,68 @@
         right: -125px;
         bottom: 25px;
         font-family: "Oswald", sans-serif; }
+
+.drawer.expand {
+  transform: translateX(0);
+  opacity: 1; }
+
+.drawer {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+  position: fixed;
+  top: 0;
+  width: 400px;
+  background-color: #222222;
+  height: 100vh;
+  z-index: 2000; }
+  .drawer .drawer-content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .drawer .drawer-content .btn-cls-drawer {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 30px;
+      height: 30px; }
+      .drawer .drawer-content .btn-cls-drawer .btn-span {
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        position: relative; }
+        .drawer .drawer-content .btn-cls-drawer .btn-span span {
+          position: absolute;
+          top: 15px;
+          display: block;
+          width: 30px;
+          height: 2px;
+          background-color: white;
+          transform: rotate(45deg); }
+        .drawer .drawer-content .btn-cls-drawer .btn-span span:first-of-type {
+          transform: rotate(135deg); }
+    .drawer .drawer-content ul li {
+      margin: 20px 0; }
+      .drawer .drawer-content ul li a {
+        font-size: 1.6rem;
+        color: white; }
+
+.layer-drawer {
+  transition: all 0.5s ease;
+  transform: translateX(-100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1500;
+  background-color: transparent; }
+
+.layer-drawer.expand {
+  transform: translateX(0); }
 
 .menu {
   cursor: pointer;
@@ -299,7 +373,8 @@
     height: 100%; }
   .bis-work .bis-work-content {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    flex-wrap: wrap; }
     .bis-work .bis-work-content .left {
       width: 55%; }
       .bis-work .bis-work-content .left img {
@@ -361,7 +436,8 @@
   .envi-employ .envi-content {
     margin-top: 4%;
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    flex-wrap: wrap; }
     .envi-employ .envi-content .card {
       overflow: hidden;
       width: 49%; }
@@ -393,7 +469,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      transition: all .5s; }
+      transition: all 0.5s; }
       .envi-employ .employ-content .content .icon:hover {
         opacity: 0.8; }
         .envi-employ .employ-content .content .icon:hover + .text {
@@ -411,7 +487,8 @@
   background-color: #222222; }
   .menu-bottom .mebo-content {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    flex-wrap: wrap; }
     .menu-bottom .mebo-content ul {
       width: 25%;
       list-style: none; }
@@ -431,3 +508,199 @@
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-weight: 500; }
+
+@media screen and (max-width: 768px) {
+  .header {
+    height: 80px; }
+    .header .header-content {
+      width: 100%;
+      position: relative; }
+      .header .header-content .logo h1 a {
+        font-size: 3.5rem; }
+      .header .header-content .logo h1:after {
+        font-size: 1.4rem;
+        right: -75px;
+        bottom: 18px; }
+      .header .header-content .menu-header {
+        position: absolute;
+        right: 20px;
+        top: 25%;
+        height: 30px;
+        width: 30px; }
+        .header .header-content .menu-header .menu-span {
+          cursor: pointer;
+          position: relative;
+          width: 100%;
+          height: 100%; }
+          .header .header-content .menu-header .menu-span span {
+            position: absolute;
+            display: block;
+            top: 50%;
+            width: 30px;
+            height: 2px;
+            background-color: #222222; }
+          .header .header-content .menu-header .menu-span span:first-of-type {
+            transform: translateY(-12px); }
+          .header .header-content .menu-header .menu-span span:last-of-type {
+            transform: translateY(12px); }
+      .header .header-content .menu-header.expand span {
+        transform: rotate(45deg) translateY(0); }
+      .header .header-content .menu-header.expand span:first-of-type {
+        transform: rotate(135deg); }
+      .header .header-content .menu-header.expand span:last-of-type {
+        transform: rotate(45deg); }
+  .drawer {
+    width: 300px;
+    left: unset;
+    right: 0;
+    transform: translateX(100%); }
+  .main-body {
+    margin: 0;
+    margin-top: 80px;
+    padding: 0 20px; }
+  .topslider .scroll {
+    bottom: -20px; }
+    .topslider .scroll .line-scroll {
+      height: 80px; }
+  .news .news-content .left {
+    width: 100%;
+    padding-left: 20px; }
+  .news .news-content .right {
+    padding-left: 20px;
+    width: 200px; }
+  .special .layer {
+    visibility: hidden; }
+  .special .special-content .top-content .card {
+    margin-top: 0;
+    width: 100%;
+    margin-bottom: 40px; }
+    .special .special-content .top-content .card .card-text {
+      margin-top: -6px;
+      padding: 20px; }
+  .special .special-content .top-content .card:first-of-type {
+    margin-top: 30px; }
+  .special .special-content .bottom-content {
+    padding-bottom: 0; }
+    .special .special-content .bottom-content .card {
+      width: 100%; }
+      .special .special-content .bottom-content .card .card-text {
+        margin-top: -6px; }
+  .entry,
+  .menu {
+    visibility: hidden; }
+  .message {
+    margin: 50px 0; }
+    .message .message-content .left {
+      width: 100%; }
+      .message .message-content .left .title span {
+        font-size: 3rem;
+        line-height: 44px; }
+    .message .message-content .right {
+      width: 100%;
+      margin-top: 30px;
+      letter-spacing: 1px; }
+  .bis-work .layer-bg {
+    width: 100%; }
+  .bis-work .bis-work-content .left {
+    width: 100%;
+    margin: 0 20px; }
+  .bis-work .bis-work-content .right {
+    transform: translate(0);
+    margin: 20px;
+    padding: 0;
+    width: 100%; }
+  .envi-employ {
+    padding: 20px; }
+    .envi-employ .employ-content .content .icon {
+      width: 140px;
+      height: 140px; }
+      .envi-employ .employ-content .content .icon .icon-employ {
+        width: 30px; }
+    .envi-employ .employ-content .content .text span {
+      font-size: 1.6rem; } }
+
+@media screen and (max-width: 576px) {
+  h2 {
+    font-size: 1.8rem !important; }
+    h2:after {
+      margin-top: 10px !important; }
+  p {
+    font-size: 1.2rem !important; }
+  h3 {
+    font-size: 1.6rem !important; }
+  .header {
+    height: 60px; }
+    .header .header-content {
+      padding: 0 20px;
+      justify-content: flex-start; }
+  .topslider .scroll {
+    left: 46%; }
+    .topslider .scroll .text {
+      font-size: 1.2rem; }
+    .topslider .scroll .line-scroll {
+      height: 40px;
+      width: 1px;
+      margin-top: 15px; }
+  .main-body {
+    margin-top: 60px; }
+  .news .news-content {
+    padding: 10px; }
+    .news .news-content .left {
+      padding-left: 0; }
+      .news .news-content .left ul li {
+        font-size: 1.2rem; }
+    .news .news-content .right {
+      padding-left: 0; }
+  .envi-employ .envi-content .card {
+    width: 100%; }
+  .envi-employ .title {
+    margin-bottom: 20px; }
+  .envi-employ .employ-content {
+    width: 80%; }
+    .envi-employ .employ-content .content .icon {
+      width: 80px;
+      height: 80px; }
+      .envi-employ .employ-content .content .icon .icon-employ {
+        width: 20px; }
+  .special .special-content .top-content,
+  .special .special-content .bottom-content {
+    margin-top: 0; }
+    .special .special-content .top-content .card .card-text p,
+    .special .special-content .bottom-content .card .card-text p {
+      font-size: 1.2rem; }
+    .special .special-content .top-content .card .arrow,
+    .special .special-content .bottom-content .card .arrow {
+      width: 30px;
+      height: 30px;
+      bottom: -15px; }
+  .special .special-content .bottom-content .card {
+    margin-bottom: 20px; }
+  .message .message-content .left .title span:first-of-type {
+    font-size: 1.8rem; }
+  .message .message-content .left .title span {
+    font-size: 2rem;
+    line-height: 30px; }
+  .message .message-content .right {
+    margin-top: 20px; }
+    .message .message-content .right p {
+      font-size: 1.2rem;
+      letter-spacing: 2px; }
+  .bis-work .bis-work-content .right .title span {
+    font-size: 2rem; }
+  .bis-work .bis-work-content .right p {
+    font-size: 1.2rem; } }
+
+@media screen and (max-width: 450px) {
+  .envi-employ .employ-content {
+    width: 100%; }
+    .envi-employ .employ-content .content .text span {
+      font-size: 1.2rem; }
+    .envi-employ .employ-content .content .icon {
+      width: 70px;
+      height: 70px; }
+      .envi-employ .employ-content .content .icon .icon-employ {
+        width: 12px; }
+  .menu-bottom .mebo-content ul {
+    width: 100%; }
+    .menu-bottom .mebo-content ul li {
+      margin: 20px; } }

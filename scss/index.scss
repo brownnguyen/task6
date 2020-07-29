@@ -32,7 +32,7 @@
         opacity: 1;
     }
 }
-@keyframes textShow {
+@keyframes textShowWhite {
     0% {
         color: transparent;
     }
@@ -41,6 +41,17 @@
     }
     100% {
         color: white;
+    }
+}
+@keyframes textShowBlack {
+    0% {
+        color: transparent;
+    }
+    60% {
+        color: transparent;
+    }
+    100% {
+        color: $black;
     }
 }
 @keyframes scrollKeyframe {
@@ -58,15 +69,17 @@
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
-.block-rev.rev {
+.block-white.rev {
+    animation: textShowWhite 0.8s ease forwards;
     &::before {
         animation: blockRevealAni 0.8s ease forwards;
         background-color: $red;
     }
 }
-.block-rev {
-    display: block;
+.block-white {
+    display: inline-block;
     position: relative;
+    color: transparent;
     &:before {
         position: absolute;
         z-index: 1;
@@ -76,6 +89,27 @@
         height: 100%;
     }
 }
+.block-black {
+    display: inline-block;
+    position: relative;
+    color: transparent;
+    &:before {
+        position: absolute;
+        z-index: 1;
+        content: "";
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+.block-black.rev {
+    animation: textShowBlack 0.8s ease forwards;
+    &::before {
+        animation: blockRevealAni 0.8s ease forwards;
+        background-color: $red;
+    }
+}
+
 .main-body {
     margin: 0 100px;
     margin-top: 120px;
@@ -215,6 +249,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 100px;
         .line {
             width: 15px;
             height: 14px;
@@ -228,10 +263,10 @@
                 background-color: $black;
             }
             span:first-of-type {
-                transform: translateY(-4px);
+                transform: translateY(-5px);
             }
             span:last-of-type {
-                transform: translateY(4px);
+                transform: translateY(5px);
             }
         }
         .title {
@@ -258,6 +293,7 @@
     z-index: 1020;
     .entry-content {
         transform: rotate(90deg);
+        margin-bottom: 100px;
         span {
             font-size: 1.6rem;
             color: $black;
@@ -272,6 +308,7 @@
         width: 100%;
         video {
             width: 100%;
+            height: calc(100vh - 120px);
             object-fit: cover;
         }
     }
@@ -366,7 +403,7 @@
     position: relative;
     .title-top {
         font-size: 6.4rem;
-        color: $black;
+        color: transparent;
         font-family: "Oswald", sans-serif;
         font-weight: 400;
     }
@@ -384,7 +421,7 @@
         }
         .card {
             overflow-x: hidden;
-            padding-bottom: 25px;
+            padding-bottom: 30px;
             width: 32%;
             .img-card {
                 width: 100%;
@@ -506,9 +543,16 @@
         justify-content: space-between;
         flex-wrap: wrap;
         .left {
+            position: relative;
             width: 55%;
-            img {
+            .img {
                 width: 100%;
+            }
+            .playicon {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateY(-50%) translateX(-50%);
             }
         }
         .right {
@@ -556,6 +600,17 @@
                 &:hover {
                     color: $red;
                 }
+            }
+        }
+    }
+}
+.business {
+    .bis-work-content {
+        .left {
+            cursor: pointer;
+            transition: $all;
+            &:hover {
+                opacity: 0.8;
             }
         }
     }
@@ -681,6 +736,25 @@
         font-weight: 500;
     }
 }
+@include CSSIE {
+    .menu {
+        .menu-content {
+            margin-bottom: 0;
+        }
+    }
+    .entry {
+        .entry-content {
+            margin-bottom: 0;
+        }
+    }
+    .bis-work .bis-work-content .left .playicon {
+        padding-left: 10%;
+    }
+    .special .top-content .card .card-text,
+    .special .bottom-content .card .card-text {
+        margin-top: -4px;
+    }
+}
 @media screen and (max-width: 768px) {
     .header {
         height: 80px;
@@ -751,6 +825,11 @@
         padding: 0 20px;
     }
     .topslider {
+        .topslide-main {
+            video {
+                height: unset;
+            }
+        }
         .scroll {
             bottom: -20px;
             .line-scroll {
@@ -883,6 +962,7 @@
     .topslider {
         .scroll {
             left: 46%;
+            bottom: -68px;
             .text {
                 font-size: 1.2rem;
             }
@@ -984,6 +1064,13 @@
     }
     .bis-work {
         .bis-work-content {
+            .left {
+                .playicon {
+                    img {
+                        width: 40px;
+                    }
+                }
+            }
             .right {
                 .title {
                     span {

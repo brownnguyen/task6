@@ -598,6 +598,7 @@
                 span {
                     font-size: 2.4rem;
                     font-family: "Oswald", sans-serif;
+                    font-weight: 400;
                     display: block;
                     &:after {
                         content: "";
@@ -674,11 +675,26 @@
         justify-content: space-between;
         flex-wrap: wrap;
         .card {
+            transition: $all;
             overflow: hidden;
             width: 49%;
-            img {
-                transition: $all;
-                overflow: hidden;
+            .img {
+                position: relative;
+                img {
+                    transition: $all;
+                    overflow: hidden;
+                }
+                .arrow {
+                    transition: $all;
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    bottom: -22px;
+                    right: 20px;
+                    img {
+                        width: 100%;
+                    }
+                }
             }
             .card-text {
                 color: $black;
@@ -691,6 +707,12 @@
                     margin-top: 1%;
                     font-size: 1.6rem;
                     letter-spacing: 1px;
+                }
+            }
+            &:hover {
+                opacity: 0.8;
+                .arrow {
+                    transform: translateX(20px);
                 }
             }
         }

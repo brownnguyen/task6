@@ -501,6 +501,7 @@
         .bis-work .bis-work-content .right .title span {
           font-size: 2.4rem;
           font-family: "Oswald", sans-serif;
+          font-weight: 400;
           display: block; }
           .bis-work .bis-work-content .right .title span:after {
             content: "";
@@ -558,11 +559,23 @@
     justify-content: space-between;
     flex-wrap: wrap; }
     .envi-employ .envi-content .card {
+      transition: all 0.5s ease;
       overflow: hidden;
       width: 49%; }
-      .envi-employ .envi-content .card img {
-        transition: all 0.5s ease;
-        overflow: hidden; }
+      .envi-employ .envi-content .card .img {
+        position: relative; }
+        .envi-employ .envi-content .card .img img {
+          transition: all 0.5s ease;
+          overflow: hidden; }
+        .envi-employ .envi-content .card .img .arrow {
+          transition: all 0.5s ease;
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          bottom: -22px;
+          right: 20px; }
+          .envi-employ .envi-content .card .img .arrow img {
+            width: 100%; }
       .envi-employ .envi-content .card .card-text {
         color: #383639; }
         .envi-employ .envi-content .card .card-text h3 {
@@ -573,6 +586,10 @@
           margin-top: 1%;
           font-size: 1.6rem;
           letter-spacing: 1px; }
+      .envi-employ .envi-content .card:hover {
+        opacity: 0.8; }
+        .envi-employ .envi-content .card:hover .arrow {
+          transform: translateX(20px); }
   .envi-employ .employ-title {
     margin-top: 8.5%; }
   .envi-employ .employ-content {

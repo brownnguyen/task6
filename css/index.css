@@ -363,7 +363,8 @@
           width: 20px;
           height: 4px;
           background-color: #c01920;
-          margin-top: 20px; }
+          margin-top: 24px;
+          margin-bottom: -2px; }
     .news .news-content .right {
       width: 22%; }
       .news .news-content .right .right-content .icon svg {
@@ -710,7 +711,9 @@
   .special .bottom-content .card .card-text {
     margin-top: -4px; }
   .bis-work .bis-work-content .right .title .title-span:before {
-    margin-bottom: 22px !important; } }
+    margin-bottom: 22px !important; }
+  .message .message-content .left .title .bl-1::before {
+    margin-bottom: 24px; } }
 
 @media screen and (max-width: 1024px) {
   .topslider .topslide-main video {

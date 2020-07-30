@@ -430,7 +430,8 @@
                     width: 20px;
                     height: 4px;
                     background-color: $red;
-                    margin-top: 20px;
+                    margin-top: 24px;
+                    margin-bottom: -2px;
                 }
             }
         }
@@ -888,6 +889,9 @@
                 }
             }
         }
+    }
+    .message .message-content .left .title .bl-1::before{
+        margin-bottom: 24px;
     }
 }
 @media screen and (max-width: 1024px) {

@@ -250,7 +250,7 @@
                 }
             }
         }
-        .entry-menu{
+        .entry-menu {
             visibility: hidden;
         }
     }
@@ -569,6 +569,8 @@
                     font-family: "Oswald", sans-serif;
                     font-weight: 400;
                     letter-spacing: 2px;
+                    display: table;
+                    overflow: hidden;
                     &:after {
                         content: "";
                         width: 20px;
@@ -578,6 +580,9 @@
                         margin-top: 1.5%;
                         margin-bottom: 2%;
                     }
+                }
+                .bl-2 {
+                    margin-left: -6px;
                 }
             }
         }
@@ -611,6 +616,7 @@
         .left {
             position: relative;
             width: 55%;
+            margin-top: 5px;
             .img {
                 width: 100%;
             }
@@ -633,13 +639,14 @@
                     font-family: "Oswald", sans-serif;
                     font-weight: 400;
                     display: block;
+                    margin-bottom: -3px;
                     &:after {
                         content: "";
                         display: block;
                         width: 20px;
                         height: 4px;
                         background-color: $red;
-                        margin: 4% 0;
+                        margin: 15% 0;
                     }
                 }
             }
@@ -685,7 +692,7 @@
     }
 }
 .work {
-    padding: 3.5% 0;
+    padding: 4.5% 0;
     .layer-bg {
         right: unset;
         left: 0;
@@ -693,6 +700,7 @@
     .bis-work-content {
         .right {
             transform: translateY(0);
+            margin-top: 30px;
         }
     }
 }
@@ -764,6 +772,7 @@
         justify-content: space-between;
         margin-top: 3.5%;
         .content {
+            transition: all 0.5s;
             .icon {
                 overflow: hidden;
                 width: 200px;
@@ -787,6 +796,9 @@
                     color: $black;
                     letter-spacing: 2px;
                 }
+            }
+            &:hover {
+                opacity: 0.8;
             }
         }
     }
@@ -858,7 +870,7 @@
             }
         }
     }
-    .drawer{
+    .drawer {
         width: 100%;
     }
 }
@@ -929,11 +941,11 @@
         left: unset;
         right: 0;
         transform: translateX(100%);
-        .dr-cnt{
-            .entry-menu{
+        .dr-cnt {
+            .entry-menu {
                 visibility: visible;
                 text-align: center;
-                a{
+                a {
                     font-size: 2rem;
                     color: white;
                     font-family: "Oswald", sans-serif;
@@ -1248,6 +1260,13 @@
                     margin: 20px;
                 }
             }
+        }
+    }
+}
+@media screen and (max-width:320px){
+    .footer{
+        p{
+            letter-spacing: 0;
         }
     }
 }

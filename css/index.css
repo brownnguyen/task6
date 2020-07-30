@@ -544,7 +544,8 @@
       .bis-work .bis-work-content .right p {
         margin-top: 20px;
         font-size: 1.6rem;
-        letter-spacing: 2px; }
+        letter-spacing: 2px;
+        line-height: 30px; }
       .bis-work .bis-work-content .right a {
         margin-top: 20px;
         display: block;

@@ -250,6 +250,9 @@
                 }
             }
         }
+        .entry-menu{
+            visibility: hidden;
+        }
     }
 }
 .layer-drawer {
@@ -855,6 +858,9 @@
             }
         }
     }
+    .drawer{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -919,10 +925,22 @@
         }
     }
     .drawer {
-        width: 300px;
+        // width: 300px;
         left: unset;
         right: 0;
         transform: translateX(100%);
+        .dr-cnt{
+            .entry-menu{
+                visibility: visible;
+                text-align: center;
+                a{
+                    font-size: 2rem;
+                    color: white;
+                    font-family: "Oswald", sans-serif;
+                    letter-spacing: 2px;
+                }
+            }
+        }
     }
     .main-body {
         margin: 0;

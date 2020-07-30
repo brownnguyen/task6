@@ -207,6 +207,8 @@
       .drawer .drawer-content ul li a {
         font-size: 1.6rem;
         color: white; }
+    .drawer .drawer-content .entry-menu {
+      visibility: hidden; }
 
 .layer-drawer {
   transition: all 0.5s ease;
@@ -689,7 +691,9 @@
 
 @media screen and (max-width: 1024px) {
   .topslider .topslide-main video {
-    min-height: unset; } }
+    min-height: unset; }
+  .drawer {
+    width: 100%; } }
 
 @media screen and (max-width: 768px) {
   #backTop {
@@ -734,10 +738,17 @@
       .header .header-content .menu-header.expand span:last-of-type {
         transform: rotate(45deg); }
   .drawer {
-    width: 300px;
     left: unset;
     right: 0;
     transform: translateX(100%); }
+    .drawer .dr-cnt .entry-menu {
+      visibility: visible;
+      text-align: center; }
+      .drawer .dr-cnt .entry-menu a {
+        font-size: 2rem;
+        color: white;
+        font-family: "Oswald", sans-serif;
+        letter-spacing: 2px; }
   .main-body {
     margin: 0;
     margin-top: 80px;

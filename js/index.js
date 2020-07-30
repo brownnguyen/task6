@@ -45,14 +45,15 @@ $(function () {
         elements.forEach(function (item) {
             if ($(this).scrollTop() >= $(item).offset().top - 600) {
                 $(item).addClass("rev");
+                console.log($(item))
             }
         });
     });
-    elements.forEach(function (item) {
-        if ($(this).scrollTop() >= $(item).offset().top - 600) {
-            $(item).addClass("rev");
-        }
-    });
+    // elements.forEach(function (item) {
+    //     if ($(this).scrollTop() >= $(item).offset().top - 600) {
+    //         $(item).addClass("rev");
+    //     }
+    // });
 });
 
 $('#backTop').click(function (event) {

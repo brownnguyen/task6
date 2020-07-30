@@ -48,8 +48,8 @@
   cursor: pointer;
   position: fixed;
   visibility: hidden;
-  bottom: 25%;
-  right: 5%;
+  bottom: 7%;
+  right: 6%;
   width: 56px;
   height: 56px;
   border: 2px solid black;
@@ -202,11 +202,13 @@
           transform: rotate(45deg); }
         .drawer .drawer-content .btn-cls-drawer .btn-span span:first-of-type {
           transform: rotate(135deg); }
-    .drawer .drawer-content ul li {
-      margin: 20px 0; }
-      .drawer .drawer-content ul li a {
-        font-size: 1.6rem;
-        color: white; }
+    .drawer .drawer-content ul {
+      list-style: none; }
+      .drawer .drawer-content ul li {
+        margin: 20px 0; }
+        .drawer .drawer-content ul li a {
+          font-size: 1.6rem;
+          color: white; }
     .drawer .drawer-content .entry-menu {
       visibility: hidden; }
 
@@ -266,6 +268,8 @@
         font-family: "Oswald", sans-serif;
         color: #383639;
         letter-spacing: 2px; }
+  .menu:hover {
+    opacity: 0.8; }
 
 .entry {
   display: block;
@@ -342,13 +346,6 @@
         font-size: 2.4rem;
         margin-bottom: -3px;
         letter-spacing: 3px; }
-        .news .news-content .left .title:after {
-          content: "";
-          display: block;
-          width: 20px;
-          height: 4px;
-          background-color: #c01920;
-          margin-top: 20px; }
       .news .news-content .left ul {
         list-style: none; }
         .news .news-content .left ul li {
@@ -359,6 +356,13 @@
             margin-right: 3%; }
           .news .news-content .left ul li p {
             display: inline-block; }
+        .news .news-content .left ul:before {
+          content: "";
+          display: block;
+          width: 20px;
+          height: 4px;
+          background-color: #c01920;
+          margin-top: 20px; }
     .news .news-content .right {
       width: 22%; }
       .news .news-content .right .right-content .icon svg {
@@ -476,17 +480,18 @@
       font-weight: 400;
       letter-spacing: 2px;
       display: table;
-      overflow: hidden; }
-      .message .message-content .left .title span:first-of-type:after {
-        content: "";
-        width: 20px;
-        height: 4px;
-        background-color: #c01920;
-        display: block;
-        margin-top: 5.5%;
-        margin-bottom: 11%; }
+      overflow: hidden;
+      line-height: 30px; }
     .message .message-content .left .title .bl-2 {
       margin-left: -6px; }
+    .message .message-content .left .title .bl-1:before {
+      content: "";
+      width: 20px;
+      height: 4px;
+      background-color: #c01920;
+      display: block;
+      margin-top: 26px;
+      margin-bottom: 18px; }
     .message .message-content .right {
       width: 42%; }
       .message .message-content .right p {
@@ -536,16 +541,16 @@
           font-weight: 400;
           display: block;
           margin-bottom: -3px; }
-          .bis-work .bis-work-content .right .title .blk:after {
+        .bis-work .bis-work-content .right .title .title-span {
+          display: inline-block; }
+          .bis-work .bis-work-content .right .title .title-span:before {
             content: "";
             display: block;
             width: 20px;
             height: 4px;
             background-color: #c01920;
-            margin-top: 24px; }
-        .bis-work .bis-work-content .right .title .title-span {
-          display: inline-block;
-          margin-top: 24px; }
+            margin-top: 30px;
+            margin-bottom: 20px; }
       .bis-work .bis-work-content .right p {
         margin-top: 20px;
         font-size: 1.6rem;
@@ -620,8 +625,7 @@
         color: #383639; }
         .envi-employ .envi-content .card .card-text h3 {
           font-size: 2.4rem;
-          padding-top: 6%;
-          margin-top: 1px;
+          margin-top: 6%;
           letter-spacing: 2px; }
         .envi-employ .envi-content .card .card-text p {
           margin-top: 1%;
@@ -874,6 +878,9 @@
       width: 30px;
       height: 30px;
       bottom: -10px; }
+    .envi-employ .envi-content .card .card-text p {
+      letter-spacing: unset;
+      margin-bottom: 20px; }
   .envi-employ .title {
     margin-bottom: 20px; }
   .envi-employ .employ-content {
@@ -911,13 +918,15 @@
       margin-top: 0; }
       .message .message-content .right p {
         font-size: 1.2rem;
-        letter-spacing: 2px; }
+        letter-spacing: 2px;
+        line-height: unset; }
   .bis-work .bis-work-content .left .playicon img {
     width: 40px; }
   .bis-work .bis-work-content .right .title span {
     font-size: 2rem; }
   .bis-work .bis-work-content .right p {
-    font-size: 1.2rem; } }
+    font-size: 1.2rem;
+    line-height: unset; } }
 
 @media screen and (max-width: 450px) {
   .envi-employ .employ-content {

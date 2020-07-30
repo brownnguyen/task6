@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
 }
+
 @keyframes blockRevealAni {
     0% {
         transform: translateX(-100%);
@@ -178,15 +179,17 @@
                 font-size: 6rem;
                 color: $black;
                 font-family: "Oswald", sans-serif;
-            }
-            &:after {
-                content: "RECRUITSITE";
-                position: absolute;
-                font-size: 2rem;
-                font-weight: 400;
-                right: -125px;
-                bottom: 25px;
-                font-family: "Oswald", sans-serif;
+                letter-spacing: 4px;
+                &:after {
+                    content: "RECRUITSITE";
+                    position: absolute;
+                    font-size: 2rem;
+                    font-weight: 400;
+                    right: -140px;
+                    bottom: 25px;
+                    font-family: "Oswald", sans-serif;
+                    letter-spacing: 2px;
+                }
             }
         }
     }
@@ -276,7 +279,7 @@
     z-index: 1020;
     .menu-content {
         transform: rotate(-90deg);
-        width: 70px;
+        width: 74px;
         height: 14px;
         display: flex;
         justify-content: space-between;
@@ -287,7 +290,7 @@
             height: 14px;
             position: relative;
             span {
-                top: 39%;
+                top: 40%;
                 position: absolute;
                 display: block;
                 width: 15px;
@@ -308,6 +311,7 @@
                 font-size: 1.6rem;
                 font-family: "Oswald", sans-serif;
                 color: $black;
+                letter-spacing: 2px;
             }
         }
     }
@@ -330,6 +334,7 @@
             font-size: 1.6rem;
             color: $black;
             font-family: "Oswald", sans-serif;
+            letter-spacing: 2px;
         }
     }
 }
@@ -383,6 +388,7 @@
                 font-weight: 400;
                 font-size: 2.4rem;
                 margin-bottom: -3px;
+                letter-spacing: 3px;
                 &:after {
                     content: "";
                     display: block;
@@ -397,6 +403,7 @@
                 li {
                     font-size: 1.6rem;
                     margin: 2.7% 0;
+                    letter-spacing: 2px;
                     p {
                         display: inline-block;
                         margin-left: 3%;
@@ -440,6 +447,7 @@
         color: transparent;
         font-family: "Oswald", sans-serif;
         font-weight: 400;
+        letter-spacing: 4px;
     }
     .top-content,
     .bottom-content {
@@ -470,9 +478,11 @@
                     font-size: 2.4rem;
                     text-align: center;
                     margin-bottom: 2%;
+                    letter-spacing: 4px;
                 }
                 p {
                     font-size: 1.6rem;
+                    letter-spacing: 2px;
                 }
                 .arrow {
                     transition: $all;
@@ -540,6 +550,7 @@
                     font-size: 2.4rem;
                     font-family: "Oswald", sans-serif;
                     font-weight: 400;
+                    letter-spacing: 2px;
                     &:after {
                         content: "";
                         width: 20px;
@@ -554,8 +565,11 @@
         }
         .right {
             width: 42%;
-            font-size: 1.6rem;
-            letter-spacing: 3px;
+            p {
+                font-size: 1.6rem;
+                letter-spacing: 3px;
+                line-height: 30px;
+            }
         }
     }
 }
@@ -595,6 +609,7 @@
             color: white;
             .title {
                 font-size: 3.6rem;
+                letter-spacing: 3px;
                 span {
                     font-size: 2.4rem;
                     font-family: "Oswald", sans-serif;
@@ -623,6 +638,7 @@
                 font-family: "Oswald", sans-serif;
                 color: white;
                 transition: $all;
+                letter-spacing: 2px;
                 &:after {
                     content: "";
                     width: 68px;
@@ -668,6 +684,7 @@
     padding: 5% 0;
     .title {
         font-size: 3.6rem;
+        letter-spacing: 2px;
     }
     .envi-content {
         margin-top: 4%;
@@ -702,11 +719,13 @@
                     font-size: 2.4rem;
                     padding-top: 6%;
                     margin-top: 1px;
+                    letter-spacing: 2px;
                 }
                 p {
                     margin-top: 1%;
                     font-size: 1.6rem;
                     letter-spacing: 1px;
+                    line-height: 30px;
                 }
             }
             &:hover {
@@ -725,6 +744,7 @@
         margin: auto;
         display: flex;
         justify-content: space-between;
+        margin-top: 3.5%;
         .content {
             .icon {
                 overflow: hidden;
@@ -738,9 +758,6 @@
                 transition: all 0.5s;
                 &:hover {
                     opacity: 0.8;
-                    + .text {
-                        color: $red;
-                    }
                 }
             }
             .text {
@@ -749,6 +766,8 @@
                 span {
                     font-size: 2.4rem;
                     font-weight: bold;
+                    color: $black;
+                    letter-spacing: 2px;
                 }
             }
         }
@@ -785,11 +804,13 @@
 }
 .footer {
     p {
-        margin: 16px 0;
+        padding: 19px 0;
         font-size: 1.4rem;
         text-align: center;
         font-family: "Roboto", sans-serif;
         font-weight: 500;
+        letter-spacing: 2px;
+        color: $black;
     }
 }
 @include CSSIE {
@@ -824,11 +845,11 @@
                 h1 {
                     a {
                         font-size: 3.5rem;
-                    }
-                    &:after {
-                        font-size: 1.4rem;
-                        right: -75px;
-                        bottom: 18px;
+                        &:after {
+                            font-size: 1.4rem;
+                            right: -100px;
+                            bottom: 18px;
+                        }
                     }
                 }
             }
@@ -1091,6 +1112,7 @@
             .bottom-content {
                 margin-top: 0;
                 .card {
+                    margin-bottom: 20px;
                     .card-text {
                         p {
                             font-size: 1.2rem;
@@ -1111,6 +1133,8 @@
         }
     }
     .message {
+        margin: 0;
+        margin-bottom: 20px;
         .message-content {
             .left {
                 .title {
@@ -1124,7 +1148,7 @@
                 }
             }
             .right {
-                margin-top: 20px;
+                margin-top: 0;
                 p {
                     font-size: 1.2rem;
                     letter-spacing: 2px;

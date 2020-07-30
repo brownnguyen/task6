@@ -303,6 +303,7 @@
             }
             span:first-of-type {
                 transform: translateY(-5px);
+                overflow: hidden;
             }
             span:last-of-type {
                 transform: translateY(5px);
@@ -573,7 +574,7 @@
                     font-family: "Oswald", sans-serif;
                     font-weight: 400;
                     letter-spacing: 2px;
-                    display: table;
+                    display: inline-block;
                     overflow: hidden;
                     line-height: 30px;
                 }
@@ -587,7 +588,7 @@
                         height: 4px;
                         background-color: $red;
                         display: block;
-                        margin-top: 26px;
+                        margin-top: 24px;
                         margin-bottom: 18px;
                     }
                 }
@@ -642,16 +643,15 @@
                 font-size: 3.6rem;
                 letter-spacing: 3px;
                 .blk {
-                    display: table !important;
+                    display: table-cell;
                     overflow: hidden;
                     font-size: 2.4rem;
                     font-family: "Oswald", sans-serif;
                     font-weight: 400;
-                    display: block;
                     margin-bottom: -3px;
                 }
                 .title-span {
-                    display: inline-block;
+                    display: block;
 
                     &:before {
                         content: "";
@@ -659,8 +659,8 @@
                         width: 20px;
                         height: 4px;
                         background-color: $red;
-                        margin-top: 30px;
-                        margin-bottom: 20px;
+                        margin-top: 22px;
+                        margin-bottom: 18px;
                     }
                 }
             }
@@ -875,6 +875,19 @@
     .special .top-content .card .card-text,
     .special .bottom-content .card .card-text {
         margin-top: -4px;
+    }
+    .bis-work{
+        .bis-work-content{
+            .right{
+                .title{
+                    .title-span{
+                        &:before{
+                            margin-bottom: 22px!important;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 @media screen and (max-width: 1024px) {

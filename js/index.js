@@ -38,7 +38,6 @@ layerDrawer.onclick = function () {
     layerDrawer.classList.remove("expand");
 }
 
-
 const body = document.body,
     scrollWrap = document.getElementsByClassName("main-body")[0],
     height = scrollWrap.getBoundingClientRect().height - 1,

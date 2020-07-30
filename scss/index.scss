@@ -417,7 +417,7 @@
                     font-size: 1.6rem;
                     margin: 2.7% 0;
                     letter-spacing: 2px;
-                    span{
+                    span {
                         margin-right: 3%;
                     }
                     p {
@@ -847,10 +847,10 @@
         margin-top: -4px;
     }
 }
-@media screen and (max-width:1024px){
-    .topslider{
-        .topslide-main{
-            video{
+@media screen and (max-width: 1024px) {
+    .topslider {
+        .topslide-main {
+            video {
                 min-height: unset;
             }
         }

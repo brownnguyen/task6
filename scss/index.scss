@@ -350,21 +350,32 @@
         }
     }
     .scroll {
+        cursor: pointer;
         position: absolute;
         bottom: -50px;
         left: 50%;
         .text {
+            transition: $all;
             font-size: 1.6rem;
             color: $black;
             font-family: "Oswald", sans-serif;
         }
         .line-scroll {
+            transition: $all;
             margin: auto;
             width: 2px;
             height: 100px;
             background-color: $black;
             display: block;
             margin-top: 20px;
+        }
+        &:hover {
+            .text {
+                color: $red;
+            }
+            .line-scroll {
+                background-color: $red;
+            }
         }
     }
 }

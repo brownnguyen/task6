@@ -82,3 +82,8 @@ $('#backTop').click(function (event) {
     }, 1000, 'swing');
     return false;
 });
+$("#scroll").click(function () {
+    $('html, body').animate({
+        scrollTop: $("#news").offset().top - 120
+    }, 1500);
+});

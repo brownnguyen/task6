@@ -295,20 +295,27 @@
       height: calc(100vh - 120px);
       object-fit: cover; }
   .topslider .scroll {
+    cursor: pointer;
     position: absolute;
     bottom: -50px;
     left: 50%; }
     .topslider .scroll .text {
+      transition: all 0.5s ease;
       font-size: 1.6rem;
       color: #383639;
       font-family: "Oswald", sans-serif; }
     .topslider .scroll .line-scroll {
+      transition: all 0.5s ease;
       margin: auto;
       width: 2px;
       height: 100px;
       background-color: #383639;
       display: block;
       margin-top: 20px; }
+    .topslider .scroll:hover .text {
+      color: #c01920; }
+    .topslider .scroll:hover .line-scroll {
+      background-color: #c01920; }
 
 .news {
   width: 100%;

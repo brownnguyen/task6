@@ -577,8 +577,8 @@
                         height: 4px;
                         background-color: $red;
                         display: block;
-                        margin-top: 1.5%;
-                        margin-bottom: 2%;
+                        margin-top: 5.5%;
+                        margin-bottom: 11%;
                     }
                 }
                 .bl-2 {
@@ -634,7 +634,9 @@
             .title {
                 font-size: 3.6rem;
                 letter-spacing: 3px;
-                span {
+                .blk {
+                    display: table !important;
+                    overflow: hidden;
                     font-size: 2.4rem;
                     font-family: "Oswald", sans-serif;
                     font-weight: 400;
@@ -646,8 +648,12 @@
                         width: 20px;
                         height: 4px;
                         background-color: $red;
-                        margin: 15% 0;
+                        margin-top: 24px;
                     }
+                }
+                .title-span{
+                    display: inline-block;
+                    margin-top: 24px;
                 }
             }
             p {
@@ -1264,9 +1270,9 @@
         }
     }
 }
-@media screen and (max-width:320px){
-    .footer{
-        p{
+@media screen and (max-width: 320px) {
+    .footer {
+        p {
             letter-spacing: 0;
         }
     }

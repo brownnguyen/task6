@@ -877,20 +877,20 @@
     .special .bottom-content .card .card-text {
         margin-top: -4px;
     }
-    .bis-work{
-        .bis-work-content{
-            .right{
-                .title{
-                    .title-span{
-                        &:before{
-                            margin-bottom: 22px!important;
+    .bis-work {
+        .bis-work-content {
+            .right {
+                .title {
+                    .title-span {
+                        &:before {
+                            margin-bottom: 22px !important;
                         }
                     }
                 }
             }
         }
     }
-    .message .message-content .left .title .bl-1::before{
+    .message .message-content .left .title .bl-1::before {
         margin-bottom: 24px;
     }
 }
@@ -904,6 +904,67 @@
     }
     .drawer {
         width: 100%;
+    }
+    .special {
+        .bottom-content {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+    .message {
+        .message-content {
+            .left {
+                .title {
+                    .bl-2 {
+                        font-size: 3.5rem;
+                    }
+                }
+            }
+        }
+    }
+    .bis-work {
+        .layer-bg {
+            width: 100%;
+        }
+        .bis-work-content {
+            padding-left: 20px;
+            padding-right: 20px;
+
+            .left {
+                margin-top: 20px;
+                width: 100%;
+                .playicon {
+                    img {
+                        width: 100px;
+                    }
+                }
+            }
+            .right {
+                transform: unset;
+                width: 100%;
+            }
+        }
+    }
+    .envi-employ {
+        padding: 5% 20px;
+        .employ-content {
+            .content {
+                .icon {
+                    width: 180px;
+                    height: 180px;
+                }
+            }
+        }
+    }
+    .news{
+        .news-content{
+            .right{
+                width: 20%;
+            }
+            .left{
+                width: 75%;
+            }
+        }
     }
 }
 
@@ -1164,6 +1225,9 @@
         }
     }
     .envi-employ {
+        .employ-title {
+            margin-top: 0;
+        }
         .envi-content {
             .card {
                 width: 100%;
@@ -1178,12 +1242,10 @@
                     p {
                         letter-spacing: unset;
                         margin-bottom: 20px;
+                        line-height: unset;
                     }
                 }
             }
-        }
-        .title {
-            margin-bottom: 20px;
         }
         .employ-content {
             width: 80%;
@@ -1242,6 +1304,7 @@
             .right {
                 margin-top: 0;
                 p {
+                    margin-top: 20px;
                     font-size: 1.2rem;
                     letter-spacing: 2px;
                     line-height: unset;

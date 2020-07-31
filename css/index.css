@@ -719,7 +719,34 @@
   .topslider .topslide-main video {
     min-height: unset; }
   .drawer {
-    width: 100%; } }
+    width: 100%; }
+  .special .bottom-content {
+    padding-left: 20px;
+    padding-right: 20px; }
+  .message .message-content .left .title .bl-2 {
+    font-size: 3.5rem; }
+  .bis-work .layer-bg {
+    width: 100%; }
+  .bis-work .bis-work-content {
+    padding-left: 20px;
+    padding-right: 20px; }
+    .bis-work .bis-work-content .left {
+      margin-top: 20px;
+      width: 100%; }
+      .bis-work .bis-work-content .left .playicon img {
+        width: 100px; }
+    .bis-work .bis-work-content .right {
+      transform: unset;
+      width: 100%; }
+  .envi-employ {
+    padding: 5% 20px; }
+    .envi-employ .employ-content .content .icon {
+      width: 180px;
+      height: 180px; }
+  .news .news-content .right {
+    width: 20%; }
+  .news .news-content .left {
+    width: 75%; } }
 
 @media screen and (max-width: 768px) {
   #backTop {
@@ -877,6 +904,8 @@
         font-size: 1.2rem; }
     .news .news-content .right {
       padding-left: 0; }
+  .envi-employ .employ-title {
+    margin-top: 0; }
   .envi-employ .envi-content .card {
     width: 100%; }
     .envi-employ .envi-content .card .img .arrow {
@@ -885,9 +914,8 @@
       bottom: -10px; }
     .envi-employ .envi-content .card .card-text p {
       letter-spacing: unset;
-      margin-bottom: 20px; }
-  .envi-employ .title {
-    margin-bottom: 20px; }
+      margin-bottom: 20px;
+      line-height: unset; }
   .envi-employ .employ-content {
     width: 80%; }
     .envi-employ .employ-content .content .icon {
@@ -922,6 +950,7 @@
     .message .message-content .right {
       margin-top: 0; }
       .message .message-content .right p {
+        margin-top: 20px;
         font-size: 1.2rem;
         letter-spacing: 2px;
         line-height: unset; }
